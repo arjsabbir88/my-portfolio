@@ -1,6 +1,8 @@
 "use client";
 import React from "react";
 import { SparklesCore } from "./TitleComponent";
+import AnimatedText from "./TitleAnimated/AnimatedText";
+import ShinyText from "./AnimatedSubTitle/Animated";
 
 export function Title() {
 
@@ -10,10 +12,12 @@ export function Title() {
       className="h-[40rem] w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md">
       <h1
         className="md:text-7xl text-3xl lg:text-8xl font-bold text-center relative z-20 place-self-center text-white text-[clamp(2em,10vw,10em)] font-[exo] bg-gradient-to-r from-orange-500 via-orange-300-300 to-orange-500-500 bg-[length:200%_100%] bg-clip-text animate-shimmer">
-        Tariqul Islam Khan
+        {/* Tariqul Islam Khan */}
+        <AnimatedText/>
         {/* text-white */}
       </h1>
-      <p>MERN Stack Developer</p>
+      {/* <p>MERN Stack Developer</p> */}
+      <ShinyText text="MERN Stack Developer!" disabled={false} speed={3} className='custom-class' />
       <div className="w-[40rem] h-40 relative">
         {/* Gradients */}
         <div
