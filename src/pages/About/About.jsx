@@ -73,17 +73,18 @@ const About = () => {
             Express, React, and Node. I build apps that not only work—but wow
           </p>
           <motion.div
-          
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-          viewport={{ amount: 0.3 }} // 👈 no `once: true`
-        >
-          <button
-            className="relative mt-6 rounded-xl p-4 bg-black text-white shadow-lg transition-transform hover:scale-105 hover:bounce flex items-center justify-center
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+            viewport={{ amount: 0.3 }} // 👈 no `once: true`
+          >
+            <button
+              className="relative mt-6 rounded-xl p-4 bg-black text-white shadow-lg transition-transform hover:scale-105 hover:bounce flex items-center justify-center
                        before:absolute before:inset-0 before:rounded-xl before:bg-gradient-to-br before:from-[#edb24e] before:to-transparent before:blur-[6px] before:opacity-50 before:z-[-1]
                        after:absolute after:inset-0 after:rounded-xl after:border after:border-[#edb24e] after:opacity-30 after:z-[-2]"
-          >Download Resume</button>
+            >
+              Download Resume
+            </button>
           </motion.div>
         </motion.div>
         {/* Left Side - Sticky with Image */}
