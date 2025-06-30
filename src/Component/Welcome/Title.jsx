@@ -13,14 +13,14 @@ export function Title() {
         <h3 className="text-4xl font-bold italic ">Hi&apos;I am</h3>
       <h1
         className="md:text-7xl text-3xl lg:text-8xl font-bold text-center relative z-20 place-self-center text-white text-[clamp(2em,10vw,10em)] font-[exo] bg-gradient-to-r from-orange-500 via-orange-300-300 to-orange-500-500 bg-[length:200%_100%] bg-clip-text animate-shimmer">
-        {/* Tariqul Islam Khan */}
+       
         <AnimatedText/>
-        {/* text-white */}
+        
       </h1>
-      {/* <p>MERN Stack Developer</p> */}
+      
       <ShinyText text="MERN Stack Developer!" disabled={false} speed={3} className='custom-class' />
       <div className="w-[40rem] h-40 relative">
-        {/* Gradients */}
+        
         <div
           className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
         <div
@@ -30,7 +30,7 @@ export function Title() {
         <div
           className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px w-1/4" />
 
-        {/* Core component */}
+        
         <SparklesCore
           background="transparent"
           minSize={0.4}

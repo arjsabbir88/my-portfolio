@@ -86,7 +86,7 @@ export function ContactCard() {
             </h1>
           </div>
         </div>
-        {/* Meaty part - Meteor effect */}
+        
         <Meteors number={20} />
       </div>
     </div>
