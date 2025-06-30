@@ -27,7 +27,7 @@ const skills = [
 export function Technical() {
   return (
     <div className=" flex flex-col antialiased  bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
-      <h2 className="text-3xl font-bold text-center text-white mb-6">
+      <h2 className="text-3xl font-bold text-white mb-6">
         Skills <span className="text-[#edb24e]">&&</span> Tools
       </h2>
 

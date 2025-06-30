@@ -4,6 +4,7 @@ import React from 'react'
 import About from '../About/About'
 import { Technical } from '../TechnicalSkills/Technical/Technical'
 import Tools from '../TechnicalSkills/Tools/Tools'
+import { TimelineDemo } from '../Project/Project'
 
 
 
@@ -21,6 +22,9 @@ const Home = () => {
         {/* <TechnicalSkills></TechnicalSkills> */}
         <Technical></Technical>
         <Tools></Tools>
+      </div>
+      <div>
+        <TimelineDemo></TimelineDemo>
       </div>
     </div>
   )
