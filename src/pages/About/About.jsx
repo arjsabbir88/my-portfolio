@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import ShinyText from "@/Component/Welcome/AnimatedSubTitle/Animated";
 import { BoxReveal } from "./BoxReveal";
+import { Link } from "react-router";
 // import { BoxReveal } from "@/components/ui/box-reveal";
 
 const About = () => {
@@ -21,7 +22,7 @@ const About = () => {
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
-          viewport={{ amount: 0.3 }} 
+          viewport={{ amount: 0.3 }}
         >
           {/* Inner Glow CSS */}
           <style>
@@ -39,7 +40,7 @@ const About = () => {
             {/* Image wrapper with bounce */}
             <motion.div
               className="w-48 h-48 sm:w-56 sm:h-56 rounded-full relative z-10 overflow-hidden border border-[#edb24e]"
-              animate={{ y: [0, -8, 0] }} 
+              animate={{ y: [0, -8, 0] }}
               transition={{
                 duration: 2,
                 repeat: Infinity,
@@ -78,13 +79,15 @@ const About = () => {
             transition={{ duration: 1 }}
             viewport={{ amount: 0.3 }} // 👈 no `once: true`
           >
-            <button
+            <Link
+              to="https://drive.google.com/file/d/1e2TMMuVDjTLzua-wRRFlvFtBmuvpDQzD/view?usp=sharing"
+              target="_blank"
               className="relative mt-6 rounded-xl p-4 bg-black text-white shadow-lg transition-transform hover:scale-105 hover:bounce flex items-center justify-center
                        before:absolute before:inset-0 before:rounded-xl before:bg-gradient-to-br before:from-[#edb24e] before:to-transparent before:blur-[6px] before:opacity-50 before:z-[-1]
-                       after:absolute after:inset-0 after:rounded-xl after:border after:border-[#edb24e] after:opacity-30 after:z-[-2]"
+                       after:absolute after:inset-0 after:rounded-xl after:border after:border-[#edb24e] after:opacity-30 after:z-[-2] cursor-pointer"
             >
               Download Resume
-            </button>
+            </Link>
           </motion.div>
         </motion.div>
         {/* Left Side - Sticky with Image */}

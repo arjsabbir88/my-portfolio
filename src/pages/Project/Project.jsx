@@ -123,6 +123,8 @@ export function TimelineDemo() {
             {/* repo links */}
             <div className="grid md:grid-cols-2 gap-10">
               <Link
+                to="https://tourtide-app.web.app/"
+                target="_blank"
                 className="relative mt-6 rounded-xl p-4 bg-black text-white shadow-lg transition-transform hover:scale-105 hover:bounce flex items-center justify-center outline-1
                        before:absolute before:inset-0 before:rounded-xl before:bg-gradient-to-br before:from-[#edb24e] before:to-transparent before:blur-[6px] before:opacity-50 before:z-[-1]
                        after:absolute after:inset-0 after:rounded-xl after:border after:border-[#edb24e] after:opacity-30 after:z-[-2]"
@@ -130,6 +132,8 @@ export function TimelineDemo() {
                 <FaStaylinked size={20} className="mr-2" /> Demo Link
               </Link>
               <Link
+                to="https://github.com/arjsabbir88/tourTide"
+                target="_blank"
                 className="relative mt-6 rounded-xl p-4 bg-black text-white shadow-lg transition-transform hover:scale-105 hover:bounce flex items-center justify-center outline-1
                        before:absolute before:inset-0 before:rounded-xl before:bg-gradient-to-br before:from-[#edb24e] before:to-transparent before:blur-[6px] before:opacity-50 before:z-[-1]
                        after:absolute after:inset-0 after:rounded-xl after:border after:border-[#edb24e] after:opacity-30 after:z-[-2]"
@@ -228,6 +232,8 @@ export function TimelineDemo() {
             {/* links */}
             <div className="grid md:grid-cols-2 gap-10">
               <Link
+                to="https://roomsync-finding-roommate.web.app/"
+                target="_blank"
                 className="relative mt-6 rounded-xl p-4 bg-black text-white shadow-lg transition-transform hover:scale-105 hover:bounce flex items-center justify-center outline-1
                        before:absolute before:inset-0 before:rounded-xl before:bg-gradient-to-br before:from-[#edb24e] before:to-transparent before:blur-[6px] before:opacity-50 before:z-[-1]
                        after:absolute after:inset-0 after:rounded-xl after:border after:border-[#edb24e] after:opacity-30 after:z-[-2]"
@@ -235,6 +241,8 @@ export function TimelineDemo() {
                 <FaStaylinked size={20} className="mr-2" /> Demo Link
               </Link>
               <Link
+                to="https://github.com/arjsabbir88/find_Roommate"
+                target="_blank"
                 className="relative mt-6 rounded-xl p-4 bg-black text-white shadow-lg transition-transform hover:scale-105 hover:bounce flex items-center justify-center outline-1
                        before:absolute before:inset-0 before:rounded-xl before:bg-gradient-to-br before:from-[#edb24e] before:to-transparent before:blur-[6px] before:opacity-50 before:z-[-1]
                        after:absolute after:inset-0 after:rounded-xl after:border after:border-[#edb24e] after:opacity-30 after:z-[-2]"
@@ -330,6 +338,8 @@ export function TimelineDemo() {
             {/* links */}
             <div className="grid md:grid-cols-2 gap-10">
               <Link
+                to="https://arjbookhouse.netlify.app/"
+                target="_blank"
                 className="relative mt-6 rounded-xl p-4 bg-black text-white shadow-lg transition-transform hover:scale-105 hover:bounce flex items-center justify-center outline-1
                        before:absolute before:inset-0 before:rounded-xl before:bg-gradient-to-br before:from-[#edb24e] before:to-transparent before:blur-[6px] before:opacity-50 before:z-[-1]
                        after:absolute after:inset-0 after:rounded-xl after:border after:border-[#edb24e] after:opacity-30 after:z-[-2]"
@@ -337,6 +347,8 @@ export function TimelineDemo() {
                 <FaStaylinked size={20} className="mr-2" /> Demo Link
               </Link>
               <Link
+                to="https://github.com/arjsabbir88/Lily"
+                target="_blank"
                 className="relative mt-6 rounded-xl p-4 bg-black text-white shadow-lg transition-transform hover:scale-105 hover:bounce flex items-center justify-center outline-1
                        before:absolute before:inset-0 before:rounded-xl before:bg-gradient-to-br before:from-[#edb24e] before:to-transparent before:blur-[6px] before:opacity-50 before:z-[-1]
                        after:absolute after:inset-0 after:rounded-xl after:border after:border-[#edb24e] after:opacity-30 after:z-[-2]"

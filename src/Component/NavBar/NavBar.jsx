@@ -60,7 +60,7 @@ const NavBar = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <a className="outline px-8 py-2 rounded-xl hover:bg-[#edb24e] hover:text-black transition-all duration-200">Hire Me!</a>
+        <a className="outline px-8 py-2 rounded-xl hover:bg-[#edb24e] hover:text-black transition-all duration-200 cursor-pointer">Hire Me!</a>
       </div>
     </div>
   );
