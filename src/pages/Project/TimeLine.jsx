@@ -45,6 +45,7 @@ export const Timeline = ({ data }) => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
             viewport={{ amount: 0.3 }}
+            key={index}
           >
             <div
               key={index}

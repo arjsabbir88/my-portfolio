@@ -41,7 +41,7 @@ export function TimelineDemo() {
       title: "TourTide",
       subtitle: "Tour Package Booking Platform",
       content: (
-        <div>
+        <div className="relative">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -150,7 +150,7 @@ export function TimelineDemo() {
       title: "RoomSync",
       subtitle: "Find Your Ideal Roommate",
       content: (
-        <div>
+        <div className="relative">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -259,7 +259,7 @@ export function TimelineDemo() {
       title: "Lily",
       subtitle: "A BookHouse Subscription Box Service Platform",
       content: (
-        <div>
+        <div className="relative">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}

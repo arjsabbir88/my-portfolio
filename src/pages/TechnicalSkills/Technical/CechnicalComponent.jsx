@@ -83,8 +83,8 @@ export const TechnicalComponent = ({
             pauseOnHover && "hover:[animation-play-state:paused]"
           )}
         >
-          {skills.map((skill, index) => (
-            <div className="px-4 pt-12 bg-black">
+          {/* {skills.map((skill, index) => (
+            <div key={index} className="px-4 pt-12 bg-black">
               <div className="w-[100px] md:w-[150px] lg:w-[200px] group relative bg-gradient-to-br from-[#edb24e]/40 to-transparent backdrop-blur-md rounded-2xl p-6 shadow-xl flex flex-col items-center justify-center transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-[0_0_30px_10px_#edb24e66]">
                 {skill.icon}
                 <span className="mt-3 text-white">
@@ -97,12 +97,26 @@ export const TechnicalComponent = ({
                   
                 </span>
 
-                {/* Tooltip */}
+                Tooltip
                 <span className="absolute -top-12 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-black bg-[#edb24e] px-2 py-1 rounded shadow-lg">
                   {skill.name}
                 </span>
               </div>
             </div>
+          ))} */}
+
+          {skills.map((skill) => (
+            <li key={skill.name} className="px-4 pt-12 bg-black list-none">
+              <div className="w-[100px] md:w-[150px] lg:w-[200px] group relative bg-gradient-to-br from-[#edb24e]/40 to-transparent backdrop-blur-md rounded-2xl p-6 shadow-xl flex flex-col items-center justify-center transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-[0_0_30px_10px_#edb24e66]">
+                {skill.icon}
+                <span className="mt-3 text-white">
+                  <ShinyText text={skill.name} disabled={false} speed={3} />
+                </span>
+                <span className="absolute -top-12 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-black bg-[#edb24e] px-2 py-1 rounded shadow-lg">
+                  {skill.name}
+                </span>
+              </div>
+            </li>
           ))}
         </ul>
       </motion.div>

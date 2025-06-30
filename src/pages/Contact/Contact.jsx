@@ -51,14 +51,7 @@ export function Contact() {
   return (
     <div className="max-w-11/12 mx-auto py-10">
       <div>
-        <h1 className="text-4xl">Contact Me</h1>
-        <h2 className="text-xl font-bold text-neutral-800 dark:text-neutral-200">
-          Welcome to Aceternity
-        </h2>
-        <p className="mt-2 max-w-sm text-sm text-neutral-600 dark:text-neutral-300">
-          Login to aceternity if you can because we don&apos;t have a login flow
-          yet
-        </p>
+        <h1 className="text-4xl text-center">Contact Me</h1>
       </div>
       <div className="flex flex-col lg:flex-row justify-center items-center">
         <motion.div

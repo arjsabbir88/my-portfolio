@@ -12,7 +12,7 @@ export default function layout() {
         <CustomCursor></CustomCursor>
 
         <div>
-          <div className="max-w-full">
+          <div className="max-w-full sticky top-0 z-50 bg-black">
             <NavBar></NavBar>
           </div>
           <div>

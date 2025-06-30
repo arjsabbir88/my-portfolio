@@ -84,24 +84,25 @@ export const ToolsComponent = ({
           )}
         >
           {tools.map((tool, idx) => (
-            <div className="px-4 py-12 bg-black">
-              <div className="w-[100px] md:w-[150px] lg:w-[200px] group relative bg-gradient-to-br from-[#edb24e]/40 to-transparent backdrop-blur-md rounded-2xl p-6 shadow-xl flex flex-col items-center justify-center transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-[0_0_30px_10px_#edb24e66]">
-                {tool.icon}
-                <span className="mt-3 text-white">
-                  <ShinyText
-                    text={tool.name}
-                    disabled={false}
-                    speed={3}
-                  ></ShinyText>{" "}
-                  
-                </span>
+            <li key={idx}>
+              <div className="px-4 py-12 bg-black">
+                <div className="w-[100px] md:w-[150px] lg:w-[200px] group relative bg-gradient-to-br from-[#edb24e]/40 to-transparent backdrop-blur-md rounded-2xl p-6 shadow-xl flex flex-col items-center justify-center transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-[0_0_30px_10px_#edb24e66]">
+                  {tool.icon}
+                  <span className="mt-3 text-white">
+                    <ShinyText
+                      text={tool.name}
+                      disabled={false}
+                      speed={3}
+                    ></ShinyText>{" "}
+                  </span>
 
-                {/* Tooltip */}
-                <span className="absolute -top-12 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-black bg-[#edb24e] px-2 py-1 rounded shadow-lg">
-                  {tool.name}
-                </span>
+                  {/* Tooltip */}
+                  <span className="absolute -top-12 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-black bg-[#edb24e] px-2 py-1 rounded shadow-lg">
+                    {tool.name}
+                  </span>
+                </div>
               </div>
-            </div>
+            </li>
           ))}
         </ul>
       </motion.div>
