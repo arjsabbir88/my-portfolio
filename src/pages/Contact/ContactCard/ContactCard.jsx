@@ -76,13 +76,13 @@ export function ContactCard() {
           <div className="mt-10">
             <MdAttachEmail size={30}/>
             <ShinyText
-              text="Phone Number!!"
+              text="Email!!"
               disabled={false}
               speed={3}
               className="custom-class text-base"
             ></ShinyText>
             <h1 className="relative z-50 mb-4 text-xs md:text-sm lg:text-xl font-bold text-white">
-              01817247388
+              arjsabbir88@gmail.com
             </h1>
           </div>
         </div>
