@@ -5,6 +5,7 @@ import About from '../About/About'
 import { Technical } from '../TechnicalSkills/Technical/Technical'
 import Tools from '../TechnicalSkills/Tools/Tools'
 import { TimelineDemo } from '../Project/Project'
+import { Contact } from '../Contact/Contact'
 
 
 
@@ -25,6 +26,9 @@ const Home = () => {
       </div>
       <div>
         <TimelineDemo></TimelineDemo>
+      </div>
+      <div className='bg-black'>
+        <Contact></Contact>
       </div>
     </div>
   )

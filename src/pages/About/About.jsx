@@ -21,7 +21,7 @@ const About = () => {
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
-          viewport={{ amount: 0.3 }} // 👈 no `once: true`
+          viewport={{ amount: 0.3 }} 
         >
           {/* Inner Glow CSS */}
           <style>
@@ -39,7 +39,7 @@ const About = () => {
             {/* Image wrapper with bounce */}
             <motion.div
               className="w-48 h-48 sm:w-56 sm:h-56 rounded-full relative z-10 overflow-hidden border border-[#edb24e]"
-              animate={{ y: [0, -8, 0] }} // bounce up and down
+              animate={{ y: [0, -8, 0] }} 
               transition={{
                 duration: 2,
                 repeat: Infinity,
