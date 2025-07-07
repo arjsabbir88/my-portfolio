@@ -46,10 +46,9 @@ export function Contact() {
         }
       );
 
-    console.log("Form submitted");
   };
   return (
-    <div className="max-w-11/12 mx-auto py-10">
+    <div className="max-w-11/12 mx-auto py-10 overflow-hidden">
       <div>
         <h1 className="text-4xl text-center">Contact Me</h1>
       </div>
