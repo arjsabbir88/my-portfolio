@@ -1,12 +1,112 @@
-# React + Vite
+# Protfolio Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a modern portfolio web application built with React and Vite. It features a responsive design, animated UI components, and a contact form with email integration.
 
-Currently, two official plugins are available:
+## Features
+- Responsive layout with Tailwind CSS
+- Animated components using Framer Motion
+- Contact form with email sending (emailjs)
+- Custom UI elements and reusable components
+- Social links and project showcase
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Project Structure
+```
+components.json
+eslint.config.js
+index.html
+jsconfig.json
+package.json
+README.md
+vite.config.js
+public/
+  vite.svg
+src/
+  App.css
+  App.jsx
+  index.css
+  main.jsx
+  Tailwind.config.js
+  assets/
+    react.svg
+  Component/
+    Cursor.jsx
+    Links/
+      Links.jsx
+    NavBar/
+      NavBar.jsx
+    Welcome/
+      Title.jsx
+      TitleComponent.jsx
+      AnimatedSubTitle/
+        Animated.jsx
+        ShinyText.css
+      TitleAnimated/
+        AnimatedComponent.jsx
+        AnimatedText.jsx
+  components/
+    ui/
+      menubar.jsx
+      sonner.jsx
+    Custom/
+      Logo/
+        Logo.jsx
+    Layout/
+      Background-Bems.jsx
+      Layout.jsx
+    lib/
+      utils.js
+    pages/
+      About/
+        About.jsx
+        BoxReveal.jsx
+      Contact/
+        Contact.jsx
+        input.jsx
+        label.jsx
+        ContactCard/
+          ContactCard.jsx
+          contactCardComponent.jsx
+      Error/
+        Error.jsx
+      Home/
+        Home.jsx
+      Project/
+        Project.jsx
+        TimeLine.jsx
+      TechnicalSkills/
+        Technical/
+          CechnicalComponent.jsx
+          Technical.jsx
+        Tools/
+          Tools.jsx
+          ToolsComponent.jsx
+    Router/
+      router.jsx
+```
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. **Install dependencies:**
+   ```sh
+   npm install
+   ```
+2. **Start the development server:**
+   ```sh
+   npm run dev
+   ```
+3. **Build for production:**
+   ```sh
+   npm run build
+   ```
+
+## Technologies Used
+- React
+- Vite
+- Tailwind CSS
+- Framer Motion
+- EmailJS
+- SweetAlert2
+- Sonner (toast notifications)
+
+## Contact
+For any queries, use the contact form on the website or reach out via the provided social links.
