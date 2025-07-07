@@ -11,13 +11,30 @@ import { Input } from "./input";
 import { ContactCard } from "./ContactCard/ContactCard";
 import { motion } from "framer-motion";
 import Swal from "sweetalert2";
+import { toast } from "sonner";
 
 export function Contact() {
   const form = useRef();
   const handleSubmit = (e) => {
     e.preventDefault();
+    const email = e.target.email.value;
+    const message = e.target.message.value;
+    const firstName = e.target.firstname.value;
+    const lastName = e.target.lastname.value;
+    console.log(email,message)
 
-    console.log(form.current);
+    if (!email || !message || firstName || lastName) {
+      // alert("All fields are required!");
+      toast("All fields are required!", {
+          action: {
+            label: "Undo",
+            // onClick: () => console.log("Undo"),
+          }
+          
+        })
+      return;
+    }
+
     emailjs
       .sendForm("service_w8jrqqc", "template_oclnz8r", form.current, {
         publicKey: "Jyjm670B0GU9Xs0iC",
@@ -28,11 +45,12 @@ export function Contact() {
           Swal.fire({
             position: "top-end",
             icon: "success",
-            title: "Yeah!! We got your email. We will contact with you as soon as possible",
+            title:
+              "Yeah!! We got your email. We will contact with you as soon as possible",
             showConfirmButton: false,
             timer: 1500,
           });
-          form.current.reset()
+          form.current.reset();
         },
         (error) => {
           console.log("FAILED...", error.text);
@@ -45,7 +63,6 @@ export function Contact() {
           });
         }
       );
-
   };
   return (
     <div className="max-w-11/12 mx-auto py-10 overflow-hidden">
@@ -82,6 +99,7 @@ export function Contact() {
                     id="firstname"
                     placeholder="First Name"
                     type="text"
+                    
                   />
                 </LabelInputContainer>
                 <LabelInputContainer>
@@ -93,6 +111,7 @@ export function Contact() {
                     id="lastname"
                     placeholder="Last Name"
                     type="text"
+                  
                   />
                 </LabelInputContainer>
               </div>
@@ -116,6 +135,7 @@ export function Contact() {
                   id="message"
                   type="text-area"
                   placeholder="Write your massage"
+                  
                 />
               </LabelInputContainer>
 
